@@ -7,7 +7,7 @@
 * Скрипт для формы на JS;
 * Форма смены Имени и О себе
 
-My site is published at https://tityakovnikolay.github.io/russian-travel/
+My site is published at https://tityakovnikolay.github.io/mesto/index.html
 
 
 ### **2020 Титяков Н.М.**
