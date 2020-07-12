@@ -1,0 +1,23 @@
+@import url(./__name/places__name.css);
+@import url(./__name-space/places__name-space.css);
+@import url(./__btn-heart/places__btn-heart.css);
+@import url(./__el/places__el.css);
+@import url(./__img/places__img.css);
+
+.places{
+  max-width: 882px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(100px, 282px));
+  grid-template-rows: repeat(2, 361px);
+  grid-gap: 21px 18px;
+}
+
+@media screen and (max-width: 780px){
+  .places{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}

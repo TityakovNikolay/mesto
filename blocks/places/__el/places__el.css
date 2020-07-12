@@ -1,0 +1,11 @@
+.places__el{
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 780px){
+  .places__el{
+    padding: 0 0 20px;
+
+  }
+}

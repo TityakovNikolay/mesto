@@ -1,0 +1,14 @@
+.places__img{
+  max-width: 282px;
+  max-height: 282px;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px 10px 0px 0px;
+  object-fit: cover;
+}
+@media screen and (max-width: 780px){
+  .places__img{
+    height: 282px;
+
+  }
+}

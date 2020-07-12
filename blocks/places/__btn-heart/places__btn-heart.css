@@ -1,0 +1,19 @@
+.places__btn-heart{
+  background-image: url(../../../image/heart.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 21px;
+  height: 19px;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  transition: background-image 0.2s ease-in-out ;
+}
+
+.places__btn-heart:focus{
+    outline: none;
+}
+
+.places__btn-heart:hover{
+    background-image: url(../../../image/heart_hover.svg);
+}
