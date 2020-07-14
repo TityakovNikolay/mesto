@@ -9,6 +9,13 @@
   box-sizing: border-box;
 }
 
+@media screen and (max-width: 920px){
+  .footer{
+    padding: 66px 20px 60px 20px;
+
+  }
+}
+
 @media screen and (max-width: 780px){
   .footer{
     padding: 48px 19px 38px;

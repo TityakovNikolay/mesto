@@ -2,9 +2,6 @@
   max-width: 882px;
   min-width: 324px;
   width: 100%;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   align-items: center;

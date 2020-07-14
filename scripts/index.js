@@ -6,24 +6,23 @@ let aboutInput = document.querySelector('.popup__input_type_about');
 let profileName = document.querySelector('.profile__name');
 let profileAbout = document.querySelector('.profile__about');
 let submitBtn = document.querySelector(".popup__btn-save");
+let popupForm = document.querySelector('.popup__form');
 
-function closeOpen(){
-    popup.classList.toggle('popup__opened')
-    if(popup.classList.contains("popup__opened")){
+function closeOpenPopup(){
+    popup.classList.toggle('popup_opened');
+    if(popup.classList.contains("popup_opened")){
         nameInput.value = profileName.textContent;
         aboutInput.value = profileAbout.textContent;
     }
 }
-function submit() {
-    let name = nameInput.value;
-    let about = aboutInput.value;
-  
-    profileName.textContent = name;
-    profileAbout.textContent = about;
-    closeOpen();
+function submit(evt) {
+  event.preventDefault();
+  profileName.textContent = nameInput.value;
+  profileAbout.textContent = aboutInput.value;
+  closeOpenPopup();
 }
 
 
-openPopupBtn.addEventListener('click', closeOpen);
-closePopupBtn.addEventListener("click", closeOpen);
-submitBtn.addEventListener("click", submit)
+openPopupBtn.addEventListener('click', closeOpenPopup);
+closePopupBtn.addEventListener("click",closeOpenPopup);
+popupForm.addEventListener("submit", submit);
