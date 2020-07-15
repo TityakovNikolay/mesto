@@ -5,7 +5,6 @@ let nameInput = document.querySelector('.popup__input_type_name');
 let aboutInput = document.querySelector('.popup__input_type_about');
 let profileName = document.querySelector('.profile__name');
 let profileAbout = document.querySelector('.profile__about');
-let submitBtn = document.querySelector(".popup__btn-save");
 let popupForm = document.querySelector('.popup__form');
 
 function closeOpenPopup(){
@@ -16,7 +15,7 @@ function closeOpenPopup(){
     }
 }
 function submit(evt) {
-  event.preventDefault();
+  evt.preventDefault();
   profileName.textContent = nameInput.value;
   profileAbout.textContent = aboutInput.value;
   closeOpenPopup();
