@@ -7,7 +7,7 @@
   border: none;
   background-color: transparent;
   padding: 0;
-  transition: background-image 0.2s ease-in-out ;
+  transition: opacity 0.2s ease-in-out ;
 }
 
 .places__btn-heart:focus{
@@ -15,5 +15,5 @@
 }
 
 .places__btn-heart:hover{
-    background-image: url(../../../image/heart_hover.svg);
+    opacity: 0.6;
 }

@@ -9,3 +9,4 @@
 @import url(../blocks/footer/footer.css);
 @import url(../blocks/popup/popup.css);
 @import url(../blocks/popup/_opened/popup_opened.css);
+@import url(../blocks/places/__btn-heart/_type/places__btn-heart_type_active.css);

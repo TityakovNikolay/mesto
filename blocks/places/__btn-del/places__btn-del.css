@@ -1,0 +1,21 @@
+.places__btn-del{
+  background-image: url(../../../image/Delete.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 18px;
+  height: 19px;
+  border: none;
+  position: absolute;
+  top: 18px;
+  right: 15px;
+  background-color: transparent;
+  padding: 0;
+  transition: background-image 0.2s ease-in-out ;
+}
+  
+.places__btn-del:focus{
+  outline: none;
+}
+.places__btn-del:hover{
+    opacity: 0.6;
+}
