@@ -4,31 +4,22 @@
 @import url(./__form/popup__form.css);
 @import url(./__input/popup__input.css);
 @import url(./__title/popup__title.css);
-
+@import url(./__img/popup__img.css);
+@import url(./__img-caption/popup__img-cap.css);
+@import url(./__container-img/popup__container-img.css);
 
 .popup {
-  display: none;
+  visibility: hidden;
+  opacity: 0;
   position: fixed;
   width: 100%;
   height: 100%;
   top: 0;
   left: 0;
-  background-color: #00000080;
+  background-color: rgba(0, 0, 0, 0.6);
   align-items: center;
   justify-content: center;
   box-sizing: border-box;
   z-index: 1;
-}
-
-.popup-card{
-  display: none;
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  background-color: #00000080;
-  align-items: center;
-  justify-content: center;
-  box-sizing: border-box;
+  transition: visibility 0s, opacity 0.3s linear;
 }

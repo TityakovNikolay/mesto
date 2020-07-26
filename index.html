@@ -46,7 +46,7 @@
       </form>
     </div>
   </div>
-  <div class="popup-card">
+  <div class="popup popup-card">
     <div class="popup__container">
       <button class="popup__btn-close" type="button"></button>
       <form name="popup-form" class="popup__form" action="#">
@@ -56,11 +56,20 @@
         <button type="submit" class="popup__btn-save">Сохранить</button>
       </form>
     </div>
-  </div>	
+  </div>
+
+  <div class="popup popup_image">
+    <figure class="popup__container-img">
+      <button type="button" class="popup__btn-close"></button>
+      <img class="popup__img" src="" alt="фото">
+      <figcaption class="popup__img-cap"></figcaption>
+    </figure>
+    
+</div>
 
   <template id="places-card">
     <div class="places__el">
-      <img class="places__img" src="" alt="фото">
+      <img class="places__img" src="#" alt="фото">
       <button type="button" class="places__btn-del"></button>
       <div class="places__name-space">
           <p class="places__name"></p>
