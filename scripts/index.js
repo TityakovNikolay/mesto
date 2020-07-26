@@ -143,6 +143,7 @@ allCardsImg.forEach(function(item){
 });
 });
 }
+openImg();
 imageClose.addEventListener("click", function(){
   popupImage.classList.toggle("popup_opened");
 });
