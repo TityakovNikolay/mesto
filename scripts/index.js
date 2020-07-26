@@ -123,7 +123,7 @@ initialCards.forEach(function(item){
   places.append(placesEl);
   delCard();
 });
-openImg();
+
 //попап открытия картинки
 const popupImage = document.querySelector(".popup_image");
 const popupImg = popupImage.querySelector(".popup__img");
@@ -144,7 +144,7 @@ allCardsImg.forEach(function(item){
 });
 });
 }
-
+openImg();
 imageClose.addEventListener("click", function(){
   popupImage.classList.toggle("popup_opened");
 });
