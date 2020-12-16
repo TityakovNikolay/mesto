@@ -10,7 +10,7 @@
   right: 15px;
   background-color: transparent;
   padding: 0;
-  transition: background-image 0.2s ease-in-out ;
+  transition: background-image 0.2s ease-in-out;
 }
   
 .places__btn-del:focus{
