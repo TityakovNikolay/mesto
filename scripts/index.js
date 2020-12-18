@@ -1,4 +1,3 @@
-//попап редактирования профиля
 
 const openPopupBtn = document.querySelector(".profile__edit");
 const closePopupBtn = document.querySelector(".popup__btn-close");
@@ -9,13 +8,30 @@ const profileName = document.querySelector(".profile__name");
 const profileAbout = document.querySelector(".profile__about");
 const popupForm = document.querySelector(".popup__form");
 
+const popupImage = document.querySelector(".popup_image");
+const popupImg = popupImage.querySelector(".popup__img");
+const popupImgCap = popupImage.querySelector(".popup__img-cap");
+const imageClose = popupImage.querySelector(".popup__btn-close");
 
+const popupAddCard = document.querySelector(".popup-card");
+const btnClose = popupAddCard.querySelector(".popup__btn-close");
+const addCardBtn = document.querySelector(".profile__add-button");
+const popupFormCard = popupAddCard.querySelector(".popup__form");
+const cardInputName = popupAddCard.querySelector(".popup__input_type_name");
+const cardInputLink = popupAddCard.querySelector(".popup__input_type_about");
+
+const placesCard = document.querySelector("#places-card").content;
+const places = document.querySelector(".places");
+
+//открытие попапов
 function openPopup(popup){
     popup.classList.add("popup_opened");
 }
+//закрытие попапов
 function closePopup(popup){
   popup.classList.remove("popup_opened");
 }
+//редактирования профиля
 function profileSubmitHandler(evt) {
   evt.preventDefault();
   profileName.textContent = nameInput.value;
@@ -41,16 +57,8 @@ popupForm.addEventListener("submit", profileSubmitHandler);
   }
 
 
-//попап добавления карточки
-const popupAddCard = document.querySelector(".popup-card");
-const btnClose = popupAddCard.querySelector(".popup__btn-close");
-const addCardBtn = document.querySelector(".profile__add-button");
-const popupFormCard = popupAddCard.querySelector(".popup__form");
-const cardInputName = popupAddCard.querySelector(".popup__input_type_name");
-const cardInputLink = popupAddCard.querySelector(".popup__input_type_about");
+//добавления карточки
 
-const placesCard = document.querySelector("#places-card").content;
-const places = document.querySelector(".places");
 
 function addCard() {
   const cardInfo = { 
@@ -127,10 +135,6 @@ initialCards.forEach(function(item){
 });
 
 //попап открытия картинки
-const popupImage = document.querySelector(".popup_image");
-const popupImg = popupImage.querySelector(".popup__img");
-const popupImgCap = popupImage.querySelector(".popup__img-cap");
-const imageClose = popupImage.querySelector(".popup__btn-close");
 
 function openImage(evt){
   const evtTarget = evt.target;
